@@ -5,11 +5,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Activity.CetakActivity"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity.SemuaTransaksiActivity"></activity>
+        <activity android:name=".Activity.CetakActivity" />
         <activity android:name=".Activity.LaporanActivity" />
         <activity android:name=".Activity.PemasukanActivity" />
         <activity android:name=".Activity.BiodataActivity" />
