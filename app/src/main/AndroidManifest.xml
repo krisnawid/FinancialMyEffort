@@ -8,7 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Activity.SemuaTransaksiActivity"></activity>
+        <activity android:name=".Activity.TambahDataActivity"></activity>
+        <activity android:name=".Activity.SemuaTransaksiActivity" />
         <activity android:name=".Activity.CetakActivity" />
         <activity android:name=".Activity.LaporanActivity" />
         <activity android:name=".Activity.PemasukanActivity" />

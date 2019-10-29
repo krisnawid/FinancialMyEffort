@@ -1,6 +1,7 @@
 package com.sdkdroid.financialmyeffort;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import com.sdkdroid.financialmyeffort.Activity.BiodataActivity;
 import com.sdkdroid.financialmyeffort.Activity.CetakActivity;
 import com.sdkdroid.financialmyeffort.Activity.LaporanActivity;
 import com.sdkdroid.financialmyeffort.Activity.PemasukanActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
