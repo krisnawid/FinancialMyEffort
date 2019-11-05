@@ -31,6 +31,11 @@ public class BiodataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biodata);
 
+        PerusahaanDao daoPerusahaan = AppDbProvider.getInstance(this).perusahaanDao();
+        if (daoPerusahaan.selectOneDesc() == null){
+            daoPerusahaan.insertAll(this.dataSetAwal());
+        }
+
         this.loadData();
         this.initComponents();
     }
@@ -55,6 +60,8 @@ public class BiodataActivity extends AppCompatActivity {
     }
 
     public void Btn_Simpan(View view) {
+        syncData();
+
         PerusahaanDao daoPerusahaan = AppDbProvider.getInstance(this).perusahaanDao();
         daoPerusahaan.delete(this.currentPerusahaan);
         daoPerusahaan.insertAll(this.makePerusahaan());
@@ -77,6 +84,15 @@ public class BiodataActivity extends AppCompatActivity {
         this.currentPerusahaan.nama_perusahaan = this.edtNamaPerusahaan.getText().toString();
         this.currentPerusahaan.pemilik_perusahaan = this.edtNamaPemilik.getText().toString();
         this.currentPerusahaan.alamat_perusahaan = this.edtAlamatPerushaan.getText().toString();
+    }
+
+    private Perusahaan dataSetAwal(){
+        Perusahaan p = new Perusahaan();
+        p.nama_perusahaan = "";
+        p.pemilik_perusahaan = "";
+        p.alamat_perusahaan = "";
+
+        return p;
     }
 
 }
