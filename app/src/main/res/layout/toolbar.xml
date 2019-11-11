@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Fnancial My Effort"
+                android:text="Financial My Effort"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
